@@ -889,8 +889,8 @@ app.MapControllers()
      .RequireRateLimiting("GlobalLimiter");
 
 
-app.MapHub<InboxHub>("/hubs/inbox");
-
+//app.MapHub<InboxHub>("/hubs/inbox");
+app.MapHub<InboxHub>("/api/hubs/inbox");
 app.Run();
 #endregion
 
