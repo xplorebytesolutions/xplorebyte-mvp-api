@@ -1,13 +1,13 @@
 {
   "name": "xbytechat-api/Shared",
-  "generatedAt": "2025-09-12 10:33:04 +00:00",
+  "generatedAt": "2025-12-10 08:27:07 +00:00",
   "files": [
     {
       "path": "xbytechat-api/Shared/AutoMapperProfile.cs",
-      "sha256": "989f0b9b654be427f90cea952c56afc87d0c6b647e71bae60f9694b4e21bacf2",
+      "sha256": "0ba07b894bf8d3f5c191c050ba75cebe9b18dd77aa56b6a61dfb332f2ef09283",
       "language": "csharp",
-      "size": 708,
-      "content": "using AutoMapper;\nusing xbytechat.api.CRM.Dtos;\nusing xbytechat.api.CRM.Models;\nusing xbytechat.api.Features.CampaignModule.DTOs;\nusing xbytechat.api.Features.CampaignModule.Models;\nusing xbytechat.api.DTOs.Messages;\nusing xbytechat.api.Features.Tracking.DTOs;\nusing xbytechat.api.Features.Tracking.Models;\nusing xbytechat.api.Features.MessageManagement.DTOs;\n\nnamespace xbytechat.api.Shared\n{\n    public class AutoMapperProfile : Profile\n    {\n        public AutoMapperProfile()\n        {\n            CreateMap<Contact, ContactDto>();\n            CreateMap<Campaign, CampaignDto>();\n            CreateMap<MessageLog, MessageLogDto>();\n            CreateMap<TrackingLog, TrackingLogDto>();\n        }\n    }\n}\n"
+      "size": 726,
+      "content": "using AutoMapper;\nusing xbytechat.api.Features.CampaignModule.DTOs;\nusing xbytechat.api.Features.CampaignModule.Models;\nusing xbytechat.api.DTOs.Messages;\nusing xbytechat.api.Features.Tracking.DTOs;\nusing xbytechat.api.Features.Tracking.Models;\nusing xbytechat.api.Features.MessageManagement.DTOs;\nusing xbytechat.api.Features.CRM.Dtos;\nusing xbytechat.api.Features.CRM.Models;\n\nnamespace xbytechat.api.Shared\n{\n    public class AutoMapperProfile : Profile\n    {\n        public AutoMapperProfile()\n        {\n            CreateMap<Contact, ContactDto>();\n            CreateMap<Campaign, CampaignDto>();\n            CreateMap<MessageLog, MessageLogDto>();\n            CreateMap<TrackingLog, TrackingLogDto>();\n        }\n    }\n}\n"
     },
     {
       "path": "xbytechat-api/Shared/BusinessControllerBase.cs",
